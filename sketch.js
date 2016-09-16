@@ -1,14 +1,18 @@
+var size = 0;
 function setup(){
 		createCanvas(500,500);
+		noFill();
 }
 
 function draw(){
-	
-	ellipse(200,200,50,50);
-	
-	
-	
-	
-	
-	
+
+	ellipse(width/2,height/2,size, size);
+
+	if(size < 500){
+		size+=7;
+	}else{
+		size = 0;
+		background("#FFFFFF");
+	}
+
 }
